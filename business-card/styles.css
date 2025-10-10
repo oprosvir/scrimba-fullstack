@@ -1,0 +1,43 @@
+body {
+    margin: 20px;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;  
+}
+
+.business-card {
+    width: 400px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    background-color: #ffacc5;
+    color: #2b2839;
+    padding: 20px;
+    margin: 0 auto;
+    border-bottom: 8px solid #231942;
+    font-family: Georgia, serif;
+    font-size: small;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Animation for pulsing background color */
+@keyframes pulse {
+    0%, 100% { background-color: #ffacc5; }
+    50% { background-color: #e7c6ff; }
+}
+
+.business-card:hover {
+    transform: scale(1.05); /* Scale the card up on hover */
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px; /* Enhanced shadow on hover */
+    animation: pulse 7s infinite; /* Apply pulsing animation */
+}
+
+.avatar {
+    width: 150px;
+    height: fit-content;
+    border-radius: 10px;
+}
