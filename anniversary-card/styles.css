@@ -65,3 +65,44 @@ a {
     padding: 8px;
 }
 
+.gift-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.gift-section h2 {
+    max-width: 400px;
+}
+
+.gift-img {
+    background-image: url(images/gift-cover.jpg);
+    background-size: cover;
+    background-clip: content-box;
+    width: 350px;
+    height: 350px;
+    border: 7px dotted aliceblue;
+    border-radius: 40px;
+    padding: 8px;
+}
+
+/* mobile touch support */
+.gift-img:hover,
+.gift-img:active {
+    background-image: url("images/this_is_fine.gif");
+}
+
+/* change on smaller screens */
+@media (max-width: 900px) {
+    .gift-section {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 5px;
+    }
+}
