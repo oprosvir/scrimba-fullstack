@@ -57,12 +57,20 @@ a {
     text-align: center;
 }
 
+#gallery h3 {
+    margin-top: 5px;
+}
+
 .photo-item img {
     width: 350px;
     height: 350px;
     border-radius: 40px;
     border: 7px dotted aliceblue;
     padding: 8px;
+}
+
+.photo-item img:hover {
+    transform: scale(1.1);
 }
 
 .gift-section {
@@ -73,7 +81,7 @@ a {
     text-align: center;
     justify-content: center;
     max-width: 1200px;
-    padding: 0 50px;
+    padding: 15px 50px;
     margin: 0 auto;
 }
 
@@ -93,9 +101,32 @@ a {
 }
 
 /* mobile touch support */
-.gift-img:hover,
-.gift-img:active {
-    background-image: url("images/this_is_fine.gif");
+#magic:hover, #magic:active { 
+    background-image: url("images/joker.gif");
+}
+
+#fight:hover, #fight:active {
+    background-image: url("images/fight.gif");
+    background-position: center;
+}
+
+#love:hover, #love:active {
+    background-image: url("images/shrek_fiona.gif");
+    background-position-x: -110px;
+}
+
+#hug:hover, #hug:active {
+    background-image: url("images/monster.gif");
+}
+
+#chicken:hover, #chicken:active {
+    background-image: url("images/chicken.gif");
+    background-position-x: -90px;
+}
+
+#cat:hover, #cat:active {
+    background-image: url("images/cheshire-cat.gif");
+    background-position-x: -20px;
 }
 
 /* change on smaller screens */
