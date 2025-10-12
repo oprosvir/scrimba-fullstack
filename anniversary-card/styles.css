@@ -4,7 +4,7 @@ body {
     background: linear-gradient(to left, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
     font-family: "Give You Glory", "Bad Script", cursive;
-    font-size: large;
+    font-size: 28px;
     color: aliceblue;
     text-shadow: 0px 0px 2px black;
 }
@@ -73,20 +73,18 @@ a {
     transform: scale(1.1);
 }
 
-.gift-section {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 40px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    max-width: 1200px;
-    padding: 15px 50px;
-    margin: 0 auto;
+#gifts-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
 }
 
-.gift-section h2 {
-    max-width: 400px;
+.gift-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .gift-img {
@@ -98,6 +96,7 @@ a {
     border: 7px dotted aliceblue;
     border-radius: 40px;
     padding: 8px;
+    justify-self: center;
 }
 
 /* mobile touch support */
@@ -133,7 +132,6 @@ a {
 @media (max-width: 900px) {
     .gift-section {
         grid-template-columns: 1fr;
-        justify-items: center;
         gap: 5px;
     }
 }
