@@ -1,0 +1,50 @@
+body {
+    margin: 0px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/big-thach-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    color: antiquewhite;
+    height: 430px;
+}
+
+#hero-title {
+    background: #272B26;
+    padding: 5px 20px;
+    margin: 0 0 11px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px;
+}
+
+#hero-subtitle {
+    background: #8B6841;
+    width: 450px;
+    padding: 8px 6px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px;
+}
+
+#activities {
+    background-color: #D9BFCB;
+    color: #272B26;
+    padding: 10px 0 40px 0;
+    /* font-weight: bold; */
+}
+
+
+.img-item {
+    width: 150px;
+    border-radius: 50%;
+    /* border: 2px solid antiquewhite; */
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px; */
+}
