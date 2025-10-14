@@ -1,5 +1,5 @@
 body {
-    margin: 0px auto;
+    margin: 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,6 +15,7 @@ body {
     background-size: cover;
     color: antiquewhite;
     height: 430px;
+    padding: 20px;
 }
 
 #hero-title {
@@ -27,24 +28,43 @@ body {
 
 #hero-subtitle {
     background: #8B6841;
-    width: 450px;
+    max-width: 450px;
     padding: 8px 6px;
     margin: 0;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px;
 }
 
+/* general style for the section */
 #activities {
     background-color: #D9BFCB;
     color: #272B26;
-    padding: 10px 0 40px 0;
-    /* font-weight: bold; */
+    padding: 40px 20px;
 }
 
+#activities h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+#activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.activity-item {
+    width: 200px;
+}
+
+.activity-item h3 {
+    margin: 15px 0 0 0;
+    font-size: 1.1em;
+}
 
 .img-item {
     width: 150px;
     border-radius: 50%;
-    /* border: 2px solid antiquewhite; */
-    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px; */
+    border: 2px solid antiquewhite;
 }
