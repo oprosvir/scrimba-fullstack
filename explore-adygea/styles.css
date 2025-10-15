@@ -123,7 +123,6 @@ nav {
 .img-item {
     width: 150px;
     border-radius: 50%;
-    /* border: 2px solid antiquewhite; */
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
 }
 
@@ -157,6 +156,59 @@ nav {
 
 .history-text {
     text-align: left;
+}
+
+.history-text h3 {
+    color: #8B6841;
+}
+
+/* Guide Section */
+#guide {
+    background-color: #B8D4D0;
+    padding: 60px 20px;
+    color: #272B26;
+}
+
+.guide-card {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    gap: 50px;
+    background-color: #E8F3F1;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.guide-content {
+    text-align: left;
+}
+
+.guide-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.guide-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
+}
+
+.guide-quote {
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.guide-name {
+    font-weight: bold;
+    color: #8B6841;
+    margin: 0;
 }
 
 /* Footer */
@@ -212,7 +264,22 @@ footer p {
     .history-img {
         width: 100%;
         max-width: 350px;
-}
+    }
+
+    .guide-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .guide-content {
+        text-align: center;
+    }
+
+    .guide-img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media (max-width: 480px) {
