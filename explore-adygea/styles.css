@@ -10,6 +10,17 @@ body {
 
 h2 {
     font-style: italic;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+p {
+    font-size: 1.1em;
 }
 
 /* Header & Navigation */
@@ -89,13 +100,7 @@ nav {
 #activities {
     background-color: #D9BFCB;
     color: #272B26;
-    padding: 30px 20px;
-}
-
-#activities h2 {
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 2em;
+    padding: 60px 20px;
 }
 
 #activities-container {
@@ -113,11 +118,6 @@ nav {
 
 .activity-item h3 {
     margin: 15px 0 0 0;
-    font-size: 1.3em;
-}
-
-.activity-item p {
-    font-size: 1.1em;
 }
 
 .img-item {
@@ -125,6 +125,38 @@ nav {
     border-radius: 50%;
     /* border: 2px solid antiquewhite; */
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
+}
+
+/* History Section */
+#history {
+    background-color: #F5EFE6;
+    padding: 60px 20px 10px 20px;
+    color: #272B26;
+}
+
+.history-card {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    gap: 40px;
+    margin: 0 auto 45px auto;
+}
+
+.history-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.history-img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    flex-shrink: 0;
+}
+
+.history-text {
+    text-align: left;
 }
 
 /* Footer */
@@ -162,9 +194,25 @@ footer p {
         font-size: 1em;
     }
 
-    #activities h2 {
+    h2 {
         font-size: 1.7em;
     }
+
+    .history-card,
+    .history-card.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .history-text {
+        text-align: center;
+    }
+
+    .history-img {
+        width: 100%;
+        max-width: 350px;
+}
 }
 
 @media (max-width: 480px) {
