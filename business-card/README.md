@@ -1,8 +1,19 @@
-# Build a Business Card
-![My Business Card Project](assets/business-card-demo.gif)
+# Business Card
 
-This is my first project in HTML and CSS from the Full Stack Developer course by Scrimba. I added several features on my own, such as:
+This is my first project in HTML and CSS, created during the Scrimba Full Stack Developer course, featuring:
 
-- Shadow and hover effects
-- Color transition animation
-- Сlickable link to my GitHub profile
+- Custom design with unique color palette
+- Interactive CSS animations
+- Direct link to GitHub profile
+
+**Live Demo:** [simple-dev-card.netlify.app](https://simple-dev-card.netlify.app/)
+
+<p align="center">
+  <img src="assets/business-card-demo.gif" width="50%" alt="Business Card Demo"/>
+</p>
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- Netlify (deployment)

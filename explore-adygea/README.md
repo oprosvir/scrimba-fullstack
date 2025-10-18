@@ -13,9 +13,9 @@ A tribute website to Adygeya, my homeland region in Russia. Built with pure HTML
 
 ### Mobile View
 <p align="center">
-  <img src="assets/explore-adygeya-mobile-1.png" height="400" alt="Mobile Screenshot 1"/>
-  <img src="assets/explore-adygeya-mobile-2.png" height="400" alt="Mobile Screenshot 2"/>
-  <img src="assets/mobile-version-video.gif" height="400" alt="Mobile Demo"/>
+  <img src="assets/explore-adygeya-mobile-1.png" width="30%" alt="Mobile Screenshot 1"/>
+  <img src="assets/explore-adygeya-mobile-2.png" width="30%" alt="Mobile Screenshot 2"/>
+  <img src="assets/mobile-version-video.gif" width="30%" alt="Mobile Demo"/>
 </p>
 
 ## ✨ Features
