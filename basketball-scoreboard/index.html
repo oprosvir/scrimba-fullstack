@@ -16,15 +16,33 @@
 <body>
 	<h1 class="title">Scoreboard</h1>
     <div class="container">
-		<div>
+		<div class="team-section">
 			<h3>HOME</h3>
-			<h1 class="score">0</h1>
+			<h1 class="score" id="home-score">0</h1>
+			<div class="buttons">
+				<button class="btn" onclick="addPoints('home', 1)">+1</button>
+				<button class="btn" onclick="addPoints('home', 2)">+2</button>
+				<button class="btn" onclick="addPoints('home', 3)">+3</button>
+			</div>
     	</div>
-    	<div>
+    	<div class="timer-section">
+			<div class="timer-display" id="timer">1:30</div>
+			<div class="timer-controls">
+				<button class="timer-btn" onclick="startTimer()">▶</button>
+				<button class="timer-btn" onclick="pauseTimer()">⏸</button>
+			</div>
+    	</div>
+    	<div class="team-section">
 			<h3>GUEST</h3>
-			<h1 class="score">0</h1>
+			<h1 class="score" id="guest-score">0</h1>
+			<div class="buttons">
+				<button class="btn" onclick="addPoints('guest', 1)">+1</button>
+				<button class="btn" onclick="addPoints('guest', 2)">+2</button>
+				<button class="btn" onclick="addPoints('guest', 3)">+3</button>
+			</div>
     	</div>
     </div>
+    <button class="btn-reset" onclick="resetScores()">NEW GAME</button>
     <script src="script.js"></script>
 </body>
 </html>
