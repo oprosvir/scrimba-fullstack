@@ -1,0 +1,87 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(fonts/CursedTimerUlil-Aznm.ttf);
+    font-family: CursedTimer;
+}
+
+body {
+    background-image: url(images/joshua-kantarges-basketball-court-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.title {
+    color: burlywood;
+    font-family: "Graduate", serif;
+    font-size: 5rem;
+    letter-spacing: 0.15em;
+    text-shadow: 3px 3px 6px rgba(0,0,0,1);
+    padding: 0 0 30px;
+}
+
+.container {
+    color: #eef3e0;
+    background-color: #2E5540;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    border: 2px solid #b0b7ac;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 3px 10px;
+    width: 575px;
+    height: 385px;
+    padding: 20px;
+}
+
+.container h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: Verdana, sans-serif;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+    padding-bottom: 20px;
+}
+
+.score {
+    width: 155px;
+    height: 120px;
+    border: 2px solid #b0b7ac;
+    border-radius: 5px;
+    background-color: #161a1d;
+    font-family: "CursedTimer", Verdana, sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    line-height: 120px;
+    padding-top: 7px;
+    color: #ff0000;
+    text-shadow: 
+        0 0 10px #d00000,
+        0 0 20px #d00000,
+        0 0 40px #ff0000;
+    animation: flicker 1.5s infinite alternate;
+}
+
+
+/* @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 
+            0 0 10px #d00000,
+            0 0 20px #d00000,
+            0 0 40px #ff0000,
+            0 0 60px #ff0000;
+    }
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }
+} */
