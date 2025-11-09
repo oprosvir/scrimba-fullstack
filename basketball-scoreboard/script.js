@@ -18,6 +18,7 @@ function updateLeader() {
     const homeElement = document.getElementById('home-score');
     const guestElement = document.getElementById('guest-score');
 
+    /* Remove existing leader classes */
     homeElement.classList.remove('leader');
     guestElement.classList.remove('leader');
     if (homeScore > guestScore) {
@@ -25,4 +26,13 @@ function updateLeader() {
     } else if (guestScore > homeScore) {
         guestElement.classList.add('leader');
     }
+}
+
+function resetScores() {
+    /* These variables store the current scores and need to be reset to 0 */
+    homeScore = 0;
+    guestScore = 0;
+    document.getElementById('home-score').textContent = homeScore;
+    document.getElementById('guest-score').textContent = guestScore;
+    updateLeader();
 }

@@ -118,17 +118,46 @@ body {
     border-radius: 5px;
     font-family: Verdana, sans-serif;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
+/* Works when mouse is hovering over button */
 .btn:hover {
     background-color: #2a3135;
     border-color: #eef3e0;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Works when mouse button is pressed */
 .btn:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#reset-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Graduate", serif;
+    letter-spacing: 0.1em;
+    background-color: #2E5540;
+    border: 2px solid #b0b7ac;
+    color: #eef3e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#reset-btn:hover {
+    background-color: #3a6850;
+    border-color: #eef3e0;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.6);
+}
+
+#reset-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
