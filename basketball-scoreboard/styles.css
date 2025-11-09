@@ -20,16 +20,25 @@ body {
     padding: 40px 20px;
 }
 
-.title {
+#title {
     color: burlywood;
     font-family: "Graduate", serif;
     font-size: 5rem;
     letter-spacing: 0.15em;
-    text-shadow: 3px 3px 6px rgba(0,0,0,1);
+
+    /* Using multiple shadows to create an outline effect */
+    /* text-shadow: x-offset y-offset blur-radius color; */
+    text-shadow: 
+        -1px -1px 0 #eef3e0,    /* Top-left shadow */
+        1px -1px 0 #eef3e0,     /* Top-right shadow */
+        -1px 1px 0 #eef3e0,     /* Bottom-left shadow */
+        1px 1px 0 #eef3e0,      /* Bottom-right shadow */
+        3px 3px 6px rgba(0,0,0,1); /* Main shadow */
+
     padding: 0 0 30px;
 }
 
-.container {
+#container {
     background-color: #2E5540;
     display: flex;
     flex-direction: row;
@@ -39,11 +48,11 @@ body {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 1) 0px 3px 10px;
     width: 575px;
-    height: 385px;
+    height: 355px;
     padding: 30px 40px;
 }
 
-.container h3 {
+#container h3 {
     color: #eef3e0;
     font-weight: bold;
     font-size: 1.5rem;
@@ -64,7 +73,7 @@ body {
     line-height: 120px;
     padding-top: 7px;
     color: #ff0000;
-    text-shadow:
+    text-shadow: 
         0 0 5px rgba(208, 0, 0, 0.8),
         0 0 10px rgba(208, 0, 0, 0.6),
         0 0 15px rgba(255, 0, 0, 0.4);
@@ -76,7 +85,7 @@ body {
    Rgba values (opacity 0.3-0.9) for softer glow */
 @keyframes flicker {
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        text-shadow:
+        text-shadow: 
             0 0 5px rgba(208, 0, 0, 0.9),
             0 0 10px rgba(208, 0, 0, 0.7),
             0 0 15px rgba(255, 0, 0, 0.5),
