@@ -18,20 +18,20 @@
     <div id="container">
 		<div>
 			<h3>HOME</h3>
-			<h1 class="score">0</h1>
+			<h1 class="score" id="home-score">0</h1>
 			<div class="buttons">
-				<button class="btn">+1</button>
-				<button class="btn">+2</button>
-				<button class="btn">+3</button>
+				<button class="btn" onclick="increment('home', 1)">+1</button>
+				<button class="btn" onclick="increment('home', 2)">+2</button>
+				<button class="btn" onclick="increment('home', 3)">+3</button>
 			</div>
     	</div>
     	<div>
 			<h3>GUEST</h3>
-			<h1 class="score">0</h1>
+			<h1 class="score" id="guest-score">0</h1>
 			<div class="buttons">
-				<button class="btn">+1</button>
-				<button class="btn">+2</button>
-				<button class="btn">+3</button>
+				<button class="btn" onclick="increment('guest', 1)">+1</button>
+				<button class="btn" onclick="increment('guest', 2)">+2</button>
+				<button class="btn" onclick="increment('guest', 3)">+3</button>
 			</div>
     	</div>
     </div>

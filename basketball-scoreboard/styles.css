@@ -48,7 +48,7 @@ body {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 1) 0px 3px 10px;
     width: 575px;
-    height: 355px;
+    height: 335px;
     padding: 30px 40px;
 }
 
@@ -78,6 +78,11 @@ body {
         0 0 10px rgba(208, 0, 0, 0.6),
         0 0 15px rgba(255, 0, 0, 0.4);
     animation: flicker 1.5s infinite alternate;
+}
+
+/* Highlight the leading score with a gold border */
+.score.leader {
+    border: 4px solid gold;
 }
 
 /* Creates a neon-style effect by toggling between glowing and no shadow states.
@@ -113,4 +118,17 @@ body {
     border-radius: 5px;
     font-family: Verdana, sans-serif;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2a3135;
+    border-color: #eef3e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
