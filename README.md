@@ -11,3 +11,4 @@ My learning journey through the [Scrimba Fullstack Developer Path](https://scrim
 | [Anniversary Card](./anniversary-card) | Interactive anniversary giftcard | HTML, CSS | [View](https://anniversary-giftcard.netlify.app/) |
 | [Explore Adygeya](./explore-adygea) | Homeland homepage with advanced layouts | HTML, CSS | [View](https://explore-adygeya.netlify.app/) |
 | [Basketball Scoreboard](./basketball-scoreboard) | Interactive scoreboard with score tracking | HTML, CSS, JS | [View](https://basket-score-app.netlify.app/) |
+| [Password Generator](./password-generator) | Random password generator with customizable length and clipboard copy | HTML, CSS, JS | [View](https://easy-pass-creator.netlify.app/) |
