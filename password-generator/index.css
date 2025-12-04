@@ -5,7 +5,6 @@
 }
 
 body {
-    margin: 0;
     background-color: #1c1c1c;
     justify-content: center;
     align-items: center;
@@ -72,10 +71,28 @@ p {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+#passwords-container {
+    display: flex;
+    gap: 20px;
+}
+
+.password-box {
+    flex: 1; /* Each box takes equal share of available space */
+    background-color: #273549;
+    color: #5DEF92;
+    padding: 10px 15px;
+    min-height: 39px; 
+    border-radius: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
   #container {
     width: 90%;
+    height: auto;
     padding: 3rem 1.5rem;
   }
 
