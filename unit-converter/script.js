@@ -1,52 +1,54 @@
-const METER_TO_FEET = 3.28084;
-const LITER_TO_GALLON = 0.264172;
-const KILO_TO_POUND = 2.20462;
+// Conversion ratios stored as object (key-value pairs)
+const CONVERSIONS = {
+    meters: 3.28084,
+    liters: 0.264172,
+    kilos: 2.20462
+};
 
-const convertBtn = document.getElementById("convert-btn");
+// const because we don't reassign these variables to different elements,
+// but we can still modify their properties (like .value or .innerHTML)
+const form = document.getElementById("converter-form");
+const inputEl = document.getElementById("input-el");
+const lengthEl = document.getElementById("length-el");
+const volumeEl = document.getElementById("volume-el");
+const massEl = document.getElementById("mass-el");
 
-let lengthEl = document.getElementById("length-el");
-let volumeEl = document.getElementById("volume-el");
-let massEl = document.getElementById("mass-el");
-
-function convert(val, system) {
-    if (system === "meters") return val * METER_TO_FEET;
-    if (system === "feet") return val / METER_TO_FEET;
-    if (system === "liters") return val * LITER_TO_GALLON;
-    if (system === "gallons") return val / LITER_TO_GALLON;
-    if (system === "kilos") return val * KILO_TO_POUND;
-    if (system === "pounds") return val / KILO_TO_POUND;
+// returns an object with converted values
+function convert(val, metricUnit) {
+    const ratio = CONVERSIONS[metricUnit]; // get the conversion ratio from the object
+    return {
+        toImperial: (val * ratio).toFixed(3),
+        toMetric: (val / ratio).toFixed(3)
+    };
 }
 
-// format: 0 meters = 0 feet | 0 feet = 0 meters
-// determine WHAT to convert
-// calculation, number of decimal places
-// create string
-function render(val, metric, imperial) {
-    let valToImperial = convert(val, metric).toFixed(3);
-    let valToMetric = convert(val, imperial).toFixed(3);
+function render(val, metricUnit, imperialUnit) {
+    const result = convert(val, metricUnit);
 
-    let convertStr = `
-        ${val} ${metric} = ${valToImperial} ${imperial} | 
-        ${val} ${imperial} = ${valToMetric} ${metric}
+    return `
+        ${val} ${metricUnit} = ${result.toImperial} ${imperialUnit} | 
+        ${val} ${imperialUnit} = ${result.toMetric} ${metricUnit}
     `;
-    return convertStr;
-
 }
 
-// get value from input, convert to number
-// check value > 0 < 1000
-// convert
-// print output
-convertBtn.addEventListener('click', function () {
-    let inputEl = document.getElementById("input-el");
-    let input = Number(inputEl.value); // .value returns a string 
+function validateInput(val) {
+    return val > 0 && val < 1000;
+}
 
-    if (input > 0 && input < 1000) {
+// Handle form submission
+// Triggered when user clicks Convert button or presses Enter in input field
+// event is an object with data about the submit event (needed for preventDefault)
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // prevent page reload on form submission
+
+    const input = Number(inputEl.value); // .value returns a string
+
+    if (validateInput(input)) {
         lengthEl.innerHTML= render(input, "meters", "feet");
         volumeEl.innerHTML= render(input, "liters", "gallons");
         massEl.innerHTML= render(input, "kilos", "pounds");
     } else {
-        alert("Please enter a number between 1 and 999");
+        alert("Please enter a number between 1 and 999"); // notification in browser
         inputEl.value = ""
     }
 })

@@ -20,6 +20,13 @@ h1 {
     font-size: 1.75rem;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
 input {
     width: 117px;
     height: 83px;
@@ -75,9 +82,7 @@ button {
 }
 
 .container {
-    width: 550px;
-    /* height: 730px; */
-    
+    width: 550px;    
 }
 
 .hero {
