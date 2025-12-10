@@ -12,3 +12,4 @@ My learning journey through the [Scrimba Fullstack Developer Path](https://scrim
 | [Explore Adygeya](./explore-adygea) | Homeland homepage with advanced layouts | HTML, CSS | [View](https://explore-adygeya.netlify.app/) |
 | [Basketball Scoreboard](./basketball-scoreboard) | Interactive scoreboard with score tracking | HTML, CSS, JS | [View](https://basket-score-app.netlify.app/) |
 | [Password Generator](./password-generator) | Random password generator with customizable length and clipboard copy | HTML, CSS, JS | [View](https://easy-pass-creator.netlify.app/) |
+| [Unit Converter](./unit-converter) | Metric/Imperial converter for length, volume, and mass with input validation | HTML, CSS, JS | [View](https://converter-units.netlify.app/) |
